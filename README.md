@@ -1,8 +1,8 @@
 # nvim-config/
 
-<a href="https://dotfyle.com/vladciobancai/nvim-config"><img src="https://dotfyle.com/vladciobancai/nvim-config/badges/plugins?style=flat" /></a>
-<a href="https://dotfyle.com/vladciobancai/nvim-config"><img src="https://dotfyle.com/vladciobancai/nvim-config/badges/leaderkey?style=flat" /></a>
-<a href="https://dotfyle.com/vladciobancai/nvim-config"><img src="https://dotfyle.com/vladciobancai/nvim-config/badges/plugin-manager?style=flat" /></a>
+<a href="https://dotfyle.com/vladciobancai/nvim-config"><img src="https://dotfyle.com/vladciobancai/nvim-config/badges/plugins?style=for-the-badge" /></a>
+<a href="https://dotfyle.com/vladciobancai/nvim-config"><img src="https://dotfyle.com/vladciobancai/nvim-config/badges/leaderkey?style=for-the-badge" /></a>
+<a href="https://dotfyle.com/vladciobancai/nvim-config"><img src="https://dotfyle.com/vladciobancai/nvim-config/badges/plugin-manager?style=for-the-badge" /></a>
 
 
 ## Install Instructions
