@@ -25,11 +25,12 @@ NVIM_APPNAME=vladciobancai/nvim-config/ nvim
 
 ### colorscheme
 
++ [shaunsingh/nord.nvim](https://dotfyle.com/plugins/shaunsingh/nord.nvim)
 + [ellisonleao/gruvbox.nvim](https://dotfyle.com/plugins/ellisonleao/gruvbox.nvim)
 ### completion
 
-+ [saghen/blink.cmp](https://dotfyle.com/plugins/saghen/blink.cmp)
 + [hrsh7th/nvim-cmp](https://dotfyle.com/plugins/hrsh7th/nvim-cmp)
++ [saghen/blink.cmp](https://dotfyle.com/plugins/saghen/blink.cmp)
 ### debugging
 
 + [mfussenegger/nvim-dap](https://dotfyle.com/plugins/mfussenegger/nvim-dap)
@@ -38,9 +39,9 @@ NVIM_APPNAME=vladciobancai/nvim-config/ nvim
 + [folke/trouble.nvim](https://dotfyle.com/plugins/folke/trouble.nvim)
 ### editing-support
 
-+ [aaronik/treewalker.nvim](https://dotfyle.com/plugins/aaronik/treewalker.nvim)
-+ [gbprod/yanky.nvim](https://dotfyle.com/plugins/gbprod/yanky.nvim)
 + [nvim-treesitter/nvim-treesitter-context](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter-context)
++ [gbprod/yanky.nvim](https://dotfyle.com/plugins/gbprod/yanky.nvim)
++ [aaronik/treewalker.nvim](https://dotfyle.com/plugins/aaronik/treewalker.nvim)
 ### formatting
 
 + [stevearc/conform.nvim](https://dotfyle.com/plugins/stevearc/conform.nvim)
@@ -49,18 +50,18 @@ NVIM_APPNAME=vladciobancai/nvim-config/ nvim
 + [nvim-telescope/telescope.nvim](https://dotfyle.com/plugins/nvim-telescope/telescope.nvim)
 ### lsp
 
-+ [jose-elias-alvarez/typescript.nvim](https://dotfyle.com/plugins/jose-elias-alvarez/typescript.nvim)
 + [neovim/nvim-lspconfig](https://dotfyle.com/plugins/neovim/nvim-lspconfig)
-+ [b0o/SchemaStore.nvim](https://dotfyle.com/plugins/b0o/SchemaStore.nvim)
 + [mfussenegger/nvim-lint](https://dotfyle.com/plugins/mfussenegger/nvim-lint)
++ [jose-elias-alvarez/typescript.nvim](https://dotfyle.com/plugins/jose-elias-alvarez/typescript.nvim)
++ [b0o/SchemaStore.nvim](https://dotfyle.com/plugins/b0o/SchemaStore.nvim)
 + [nvimtools/none-ls.nvim](https://dotfyle.com/plugins/nvimtools/none-ls.nvim)
-### lsp-installer 
+### lsp-installer
 
 + [williamboman/mason.nvim](https://dotfyle.com/plugins/williamboman/mason.nvim)
 ### markdown-and-latex
 
-+ [MeanderingProgrammer/render-markdown.nvim](https://dotfyle.com/plugins/MeanderingProgrammer/render-markdown.nvim)
 + [iamcco/markdown-preview.nvim](https://dotfyle.com/plugins/iamcco/markdown-preview.nvim)
++ [MeanderingProgrammer/render-markdown.nvim](https://dotfyle.com/plugins/MeanderingProgrammer/render-markdown.nvim)
 ### plugin-manager
 
 + [folke/lazy.nvim](https://dotfyle.com/plugins/folke/lazy.nvim)
@@ -75,8 +76,8 @@ NVIM_APPNAME=vladciobancai/nvim-config/ nvim
 + [nvim-lualine/lualine.nvim](https://dotfyle.com/plugins/nvim-lualine/lualine.nvim)
 ### syntax
 
-+ [MeanderingProgrammer/treesitter-modules.nvim](https://dotfyle.com/plugins/MeanderingProgrammer/treesitter-modules.nvim)
 + [nvim-treesitter/nvim-treesitter](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter)
++ [MeanderingProgrammer/treesitter-modules.nvim](https://dotfyle.com/plugins/MeanderingProgrammer/treesitter-modules.nvim)
 ### terminal-integration
 
 + [akinsho/toggleterm.nvim](https://dotfyle.com/plugins/akinsho/toggleterm.nvim)
