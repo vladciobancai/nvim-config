@@ -26,6 +26,22 @@ return {
         open_mapping = [[<F12>]],
         ---@diagnostic disable-next-line: unused-local
         on_open = function(term)
+          -- Get the last buffer that is NOT a terminal
+          local buf = vim.fn.bufnr("#")
+          local name = vim.api.nvim_buf_get_name(buf)
+
+          -- If we somehow still don't have a file, fallback to cwd
+          local dir
+          if name ~= "" then
+            dir = vim.fn.fnamemodify(name, ":p:h")
+          else
+            dir = vim.fn.getcwd()
+          end
+
+          vim.api.nvim_chan_send(
+            term.job_id,
+            "cd " .. vim.fn.fnameescape(dir) .. "\n"
+          )
         end,
         ---@diagnostic disable-next-line: unused-local
         on_close = function(term)
