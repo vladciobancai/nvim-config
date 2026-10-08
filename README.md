@@ -1,13 +1,12 @@
 # nvim-config/
 
-<a href="https://dotfyle.com/vladciobancai/nvim-config"><img src="https://dotfyle.com/vladciobancai/nvim-config/badges/plugins?style=for-the-badge" /></a>
-<a href="https://dotfyle.com/vladciobancai/nvim-config"><img src="https://dotfyle.com/vladciobancai/nvim-config/badges/leaderkey?style=for-the-badge" /></a>
-<a href="https://dotfyle.com/vladciobancai/nvim-config"><img src="https://dotfyle.com/vladciobancai/nvim-config/badges/plugin-manager?style=for-the-badge" /></a>
-
+<a href="https://dotfyle.com/vladciobancai/nvim-config"><img src="https://dotfyle.com/vladciobancai/nvim-config/badges/plugins?style=flat" /></a>
+<a href="https://dotfyle.com/vladciobancai/nvim-config"><img src="https://dotfyle.com/vladciobancai/nvim-config/badges/leaderkey?style=flat" /></a>
+<a href="https://dotfyle.com/vladciobancai/nvim-config"><img src="https://dotfyle.com/vladciobancai/nvim-config/badges/plugin-manager?style=flat" /></a>
 
 ## Install Instructions
 
- > Install requires Neovim 0.9+. Always review the code before installing a configuration.
+> Install requires Neovim 0.9+. Always review the code before installing a configuration.
 
 Clone the repository and install the plugins:
 
@@ -25,73 +24,91 @@ NVIM_APPNAME=vladciobancai/nvim-config/ nvim
 
 ### colorscheme
 
-+ [shaunsingh/nord.nvim](https://dotfyle.com/plugins/shaunsingh/nord.nvim)
-+ [ellisonleao/gruvbox.nvim](https://dotfyle.com/plugins/ellisonleao/gruvbox.nvim)
+- [shaunsingh/nord.nvim](https://dotfyle.com/plugins/shaunsingh/nord.nvim)
+
 ### completion
 
-+ [hrsh7th/nvim-cmp](https://dotfyle.com/plugins/hrsh7th/nvim-cmp)
-+ [saghen/blink.cmp](https://dotfyle.com/plugins/saghen/blink.cmp)
+- [saghen/blink.cmp](https://dotfyle.com/plugins/saghen/blink.cmp)
+- [hrsh7th/nvim-cmp](https://dotfyle.com/plugins/hrsh7th/nvim-cmp)
+
 ### debugging
 
-+ [mfussenegger/nvim-dap](https://dotfyle.com/plugins/mfussenegger/nvim-dap)
-### diagnostics
+- [mfussenegger/nvim-dap](https://dotfyle.com/plugins/mfussenegger/nvim-dap)
 
-+ [folke/trouble.nvim](https://dotfyle.com/plugins/folke/trouble.nvim)
 ### editing-support
 
-+ [nvim-treesitter/nvim-treesitter-context](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter-context)
-+ [gbprod/yanky.nvim](https://dotfyle.com/plugins/gbprod/yanky.nvim)
-+ [aaronik/treewalker.nvim](https://dotfyle.com/plugins/aaronik/treewalker.nvim)
+- [folke/snacks.nvim](https://dotfyle.com/plugins/folke/snacks.nvim)
+- [gbprod/yanky.nvim](https://dotfyle.com/plugins/gbprod/yanky.nvim)
+
+### file-explorer
+
+- [nvim-neo-tree/neo-tree.nvim](https://dotfyle.com/plugins/nvim-neo-tree/neo-tree.nvim)
+
 ### formatting
 
-+ [stevearc/conform.nvim](https://dotfyle.com/plugins/stevearc/conform.nvim)
+- [stevearc/conform.nvim](https://dotfyle.com/plugins/stevearc/conform.nvim)
+
 ### fuzzy-finder
 
-+ [nvim-telescope/telescope.nvim](https://dotfyle.com/plugins/nvim-telescope/telescope.nvim)
+- [nvim-telescope/telescope.nvim](https://dotfyle.com/plugins/nvim-telescope/telescope.nvim)
+
+### icon
+
+- [nvim-tree/nvim-web-devicons](https://dotfyle.com/plugins/nvim-tree/nvim-web-devicons)
+
+### keybinding
+
+- [folke/which-key.nvim](https://dotfyle.com/plugins/folke/which-key.nvim)
+
 ### lsp
 
-+ [neovim/nvim-lspconfig](https://dotfyle.com/plugins/neovim/nvim-lspconfig)
-+ [mfussenegger/nvim-lint](https://dotfyle.com/plugins/mfussenegger/nvim-lint)
-+ [jose-elias-alvarez/typescript.nvim](https://dotfyle.com/plugins/jose-elias-alvarez/typescript.nvim)
-+ [b0o/SchemaStore.nvim](https://dotfyle.com/plugins/b0o/SchemaStore.nvim)
-+ [nvimtools/none-ls.nvim](https://dotfyle.com/plugins/nvimtools/none-ls.nvim)
-### lsp-installer
+- [neovim/nvim-lspconfig](https://dotfyle.com/plugins/neovim/nvim-lspconfig)
+- [mason-org/mason.nvim](https://dotfyle.com/plugins/mason-org/mason.nvim)
+- [Crysthamus/nvim-file-operations](https://dotfyle.com/plugins/Crysthamus/nvim-file-operations)
+- [mfussenegger/nvim-lint](https://dotfyle.com/plugins/mfussenegger/nvim-lint)
+- [b0o/SchemaStore.nvim](https://dotfyle.com/plugins/b0o/SchemaStore.nvim)
+- [nvimtools/none-ls.nvim](https://dotfyle.com/plugins/nvimtools/none-ls.nvim)
 
-+ [williamboman/mason.nvim](https://dotfyle.com/plugins/williamboman/mason.nvim)
 ### markdown-and-latex
 
-+ [iamcco/markdown-preview.nvim](https://dotfyle.com/plugins/iamcco/markdown-preview.nvim)
-+ [MeanderingProgrammer/render-markdown.nvim](https://dotfyle.com/plugins/MeanderingProgrammer/render-markdown.nvim)
+- [MeanderingProgrammer/render-markdown.nvim](https://dotfyle.com/plugins/MeanderingProgrammer/render-markdown.nvim)
+- [iamcco/markdown-preview.nvim](https://dotfyle.com/plugins/iamcco/markdown-preview.nvim)
+
+### nvim-dev
+
+- [MunifTanjim/nui.nvim](https://dotfyle.com/plugins/MunifTanjim/nui.nvim)
+- [nvim-lua/plenary.nvim](https://dotfyle.com/plugins/nvim-lua/plenary.nvim)
+
 ### plugin-manager
 
-+ [folke/lazy.nvim](https://dotfyle.com/plugins/folke/lazy.nvim)
-### preconfigured
+- [folke/lazy.nvim](https://dotfyle.com/plugins/folke/lazy.nvim)
 
-+ [LazyVim/LazyVim](https://dotfyle.com/plugins/LazyVim/LazyVim)
+### pre-made-configuration
+
+- [LazyVim/LazyVim](https://dotfyle.com/plugins/LazyVim/LazyVim)
+
 ### split-and-window
 
-+ [folke/edgy.nvim](https://dotfyle.com/plugins/folke/edgy.nvim)
-### statusline
+- [folke/edgy.nvim](https://dotfyle.com/plugins/folke/edgy.nvim)
 
-+ [nvim-lualine/lualine.nvim](https://dotfyle.com/plugins/nvim-lualine/lualine.nvim)
 ### syntax
 
-+ [nvim-treesitter/nvim-treesitter](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter)
-+ [MeanderingProgrammer/treesitter-modules.nvim](https://dotfyle.com/plugins/MeanderingProgrammer/treesitter-modules.nvim)
+- [nvim-treesitter/nvim-treesitter](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter)
+
 ### terminal-integration
 
-+ [akinsho/toggleterm.nvim](https://dotfyle.com/plugins/akinsho/toggleterm.nvim)
+- [akinsho/toggleterm.nvim](https://dotfyle.com/plugins/akinsho/toggleterm.nvim)
+
 ### test
 
-+ [nvim-neotest/neotest](https://dotfyle.com/plugins/nvim-neotest/neotest)
-+ [fredrikaverpil/neotest-golang](https://dotfyle.com/plugins/fredrikaverpil/neotest-golang)
+- [fredrikaverpil/neotest-golang](https://dotfyle.com/plugins/fredrikaverpil/neotest-golang)
+- [nvim-neotest/neotest](https://dotfyle.com/plugins/nvim-neotest/neotest)
+
 ## Language Servers
 
-+ gopls
-+ html
-+ pyright
-+ ruff_lsp
-+ tflint
+- gopls
+- pyright
+- ruff_lsp
+- tflint
 
-
- This readme was generated by [Dotfyle](https://dotfyle.com)
+This readme was generated by [Dotfyle](https://dotfyle.com)
