@@ -27,7 +27,7 @@ vim.filetype.add({
 vim.g.autoformat = false
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
-vim.opt.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+vim.opt.sessionoptions = "buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 vim.opt.backup = false
 vim.opt.completeopt = "menu,menuone,noinsert,noselect"
 vim.opt.conceallevel = 0
