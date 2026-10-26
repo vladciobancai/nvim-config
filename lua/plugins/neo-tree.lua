@@ -108,8 +108,37 @@ return {
         },
         git_status = {
           symbols = {
-            unstaged = "󰄱",
-            staged = "󰱒",
+            added = "\u{f067}",
+            modified = "\u{f111}",
+            deleted = "\u{f1f8}",
+            renamed = "\u{f061}",
+            untracked = "\u{f059}",
+            ignored = "\u{f070}",
+            conflict = "\u{f071}",
+            unstaged = "\u{f040}",
+            staged = "\u{f00c}",
+          },
+        },
+      },
+      renderers = {
+        -- same as the default, but keep git status visible on expanded folders
+        directory = {
+          { "indent" },
+          { "icon" },
+          { "current_filter" },
+          {
+            "container",
+            content = {
+              { "name", zindex = 10 },
+              { "symlink_target", zindex = 10, highlight = "NeoTreeSymbolicLinkTarget" },
+              { "clipboard", zindex = 10 },
+              { "diagnostics", errors_only = true, zindex = 20, align = "right", hide_when_expanded = true },
+              { "git_status", zindex = 10, align = "right" },
+              { "file_size", zindex = 10, align = "right" },
+              { "type", zindex = 10, align = "right" },
+              { "last_modified", zindex = 10, align = "right" },
+              { "created", zindex = 10, align = "right" },
+            },
           },
         },
       },
