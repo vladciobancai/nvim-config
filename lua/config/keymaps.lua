@@ -1,21 +1,14 @@
-vim.keymap.set("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
-vim.keymap.set({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>", { desc = "Escape and Clear hlsearch" })
-
--- better indenting
-vim.keymap.set("v", "<", "<gv", { desc = "Indent decrease" })
-vim.keymap.set("v", ">", ">gv", { desc = "Indent increase" })
+-- NOTE: <leader>l, <esc>, visual < / >, <leader>cd (line diagnostics) and <C-s> (save)
+-- are already provided by LazyVim.
 
 vim.keymap.set("n", "<leader>M", ":Man ", { desc = "Open manpage" })
 
-vim.keymap.set("n", "<leader>D", "<cmd>lua vim.diagnostic.open_float()<cr>", { desc = "Show diagnostics" })
 vim.keymap.set("n", "[d", function()
-  vim.diagnostic.goto_prev()
-  vim.diagnostic.open_float({ focus = false, scope = "cursor" })
+  vim.diagnostic.jump({ count = -1, float = { focus = false, scope = "cursor" } })
 end, { desc = "Go to previous diagnostic and display" })
 
 vim.keymap.set("n", "]d", function()
-  vim.diagnostic.goto_next()
-  vim.diagnostic.open_float({ focus = false, scope = "cursor" })
+  vim.diagnostic.jump({ count = 1, float = { focus = false, scope = "cursor" } })
 end, { desc = "Go to next diagnostic and display" })
 
 -- WARN: Does not work, probably due to lazy loading
@@ -40,7 +33,7 @@ end, { desc = "Go to next diagnostic and display" })
 
 vim.keymap.set({ "n", "x" }, "<leader>y", '"+y', { desc = "Yank - clipboard" })
 vim.keymap.set({ "n", "x" }, "<leader>Y", '"+Y', { desc = "Yank - clipboard" })
-vim.keymap.set("n", "<leader>p", '"+p', { desc = "Paste - clipboard" })
+-- NOTE: <leader>p is the yanky history (see plugins/yanky.lua)
 vim.keymap.set("n", "<leader>P", '"+P', { desc = "Paste - clipboard" })
 
 vim.keymap.set("n", "]<tab>", "<cmd>tabnext<cr>", { desc = "Next tab" })
@@ -59,5 +52,5 @@ vim.keymap.set("n", "[<tab>", "<cmd>tabprevious<cr>", { desc = "Previous tab" })
 --   vim.api.nvim_win_set_cursor(0, { end_row + 1, end_col - 1 })
 -- end, { desc = "Select current Treesitter node" })
 
-vim.keymap.set("n", "<leader>s", ":w<cr>", { desc = "Save file" })
-vim.keymap.set("n", "<leader>S", ":wa<cr>", { desc = "Save all files" })
+-- <leader>s is the LazyVim search group, so "save file" lives on <C-s> (LazyVim default)
+vim.keymap.set("n", "<leader>S", "<cmd>wa<cr>", { desc = "Save all files" })
