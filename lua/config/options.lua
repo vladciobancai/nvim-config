@@ -24,7 +24,7 @@ vim.filetype.add({
     overlay = "devicetree",
   },
 })
-vim.g.autoformat = false
+vim.g.autoformat = true
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 vim.opt.sessionoptions = "buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
