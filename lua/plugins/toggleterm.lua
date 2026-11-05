@@ -23,29 +23,9 @@ return {
             return vim.o.columns * 0.4
           end
         end,
-        open_mapping = [[<F12>]],
-        ---@diagnostic disable-next-line: unused-local
-        on_open = function(term)
-          -- Get the last buffer that is NOT a terminal
-          local buf = vim.fn.bufnr("#")
-          local name = vim.api.nvim_buf_get_name(buf)
-
-          -- If we somehow still don't have a file, fallback to cwd
-          local dir
-          if name ~= "" then
-            dir = vim.fn.fnamemodify(name, ":p:h")
-          else
-            dir = vim.fn.getcwd()
-          end
-
-          vim.api.nvim_chan_send(
-            term.job_id,
-            "cd " .. vim.fn.fnameescape(dir) .. "\n"
-          )
-        end,
-        ---@diagnostic disable-next-line: unused-local
-        on_close = function(term)
-        end,
+        autochdir = true,
+        auto_scroll = true,
+        hide_numbers = true,
         highlights = {
           -- highlights which map to a highlight group name and a table of it's values
           -- NOTE: this is only a subset of values, any group placed here will be set for the terminal window split
@@ -76,9 +56,10 @@ return {
           -- see :h nvim_win_open for details on borders however
           -- the 'curved' border is a custom border type
           -- not natively supported but implemented in this plugin.
-          border = 'curved', -- single/double/shadow/curved
-          width = math.floor(0.7 * vim.fn.winwidth(0)),
-          height = math.floor(0.8 * vim.fn.winheight(0)),
+          border = 'curved',
+          title_pos = 'center',
+          width = function() return math.floor(vim.o.columns * 0.8) end,
+          height = function() return math.floor(vim.o.lines * 0.8) end,
           winblend = 4,
         },
         winbar = {
@@ -87,8 +68,7 @@ return {
       })
     end,
     keys = {
-      { "<F12>" },
-      { "<Leader>at", "<cmd>ToggleTerm direction=float<CR>", desc = "terminal float" }
+      { "<Leader>at", "<cmd>ToggleTerm direction=float<CR>", desc = "terminal float" },
     }
   }
 }

@@ -5,7 +5,6 @@ return {
   { "hrsh7th/cmp-buffer", enabled = false },
   { "hrsh7th/cmp-path", enabled = false },
   { "saadparwaiz1/cmp_luasnip", enabled = false },
-
   -- 2. Configure blink.cmp as your primary completion engine
   {
     "saghen/blink.cmp",
@@ -26,12 +25,14 @@ return {
 
       -- Configure your preferred completion keymaps
       keymap = {
-        preset = "default", -- 'default', 'super-tab', or 'enter'
+        preset = "enter", -- 'default', 'super-tab', or 'enter'
 
         -- Custom tweaks (optional):
         ["<C-y>"] = { "select_and_accept" },
         ["<Up>"] = { "select_prev", "fallback" },
         ["<Down>"] = { "select_next", "fallback" },
+        ["<Tab>"] = { "select_next", "snippet_forward", "fallback" },
+        ["<S-Tab>"] = { "select_prev", "snippet_backward", "fallback" },
       },
 
       -- Define the semantic completion sources
@@ -41,6 +42,7 @@ return {
 
       -- Clean, minimal UI configuration for the completion window
       completion = {
+        list = { selection = { preselect = false } },
         menu = {
           border = "rounded",
           draw = {

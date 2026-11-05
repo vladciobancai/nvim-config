@@ -16,6 +16,7 @@ return {
     wk.add({
       { "<leader>f", group = "file/find" }, -- overrides or sets group name
       { "<leader>x", group = "diagnostics/quickfix" },
+      { "<leader>a", group = "terminal" },
 
       -- You can also bind keys directly through which-key with descriptions
       { "<leader>gY", "<cmd>GrugFar<cr>", desc = "Search and Replace" },
