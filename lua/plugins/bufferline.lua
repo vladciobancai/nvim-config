@@ -19,21 +19,12 @@ return {
       style_preset = require("bufferline").style_preset.no_italic,
     },
   },
-  config = function()
+  config = function(_, opts)
     vim.opt.termguicolors = true
 
-    -- Fetch highlights passing the dark background color required for slants
-    local highlights = require("nord").bufferline.highlights({
-      italic = true,
-      bold = true,
-      fill = "#181c24",
-    })
+    opts.options.separator_style = "slant"
+    opts.highlights = require("catppuccin.special.bufferline").get_theme()
 
-    require("bufferline").setup({
-      options = {
-        separator_style = "slant",
-      },
-      highlights = highlights,
-    })
+    require("bufferline").setup(opts)
   end,
 }
