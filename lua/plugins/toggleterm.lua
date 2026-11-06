@@ -60,7 +60,7 @@ return {
           title_pos = 'center',
           width = function() return math.floor(vim.o.columns * 0.8) end,
           height = function() return math.floor(vim.o.lines * 0.8) end,
-          winblend = 4,
+          winblend = 0,
         },
         winbar = {
           enabled = true,
