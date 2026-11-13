@@ -17,10 +17,23 @@ return {
       zsh = { "shfmt" },
       toml = { "taplo" },
       go = { "goimports", "gofmt" },
+      -- Use the "*" filetype to run formatters on all filetypes.
+      ["*"] = { "codespell" },
+      -- Use the "_" filetype to run formatters on filetypes that don't
+      -- have other formatters configured.
+      ["_"] = { "trim_whitespace" },
     },
     -- Set default options
     default_format_opts = {
       lsp_format = "fallback",
+    },
+    -- If this is set, Conform will run the formatter on save.
+    -- It will pass the table to conform.format().
+    -- This can also be a function that returns the table.
+    format_on_save = {
+      -- I recommend these options. See :help conform.format for details.
+      lsp_format = "fallback",
+      timeout_ms = 500,
     },
     -- Customize formatters
     formatters = {
