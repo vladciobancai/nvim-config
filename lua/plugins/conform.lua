@@ -10,14 +10,18 @@ return {
     formatters_by_ft = {
       lua = { "stylua" },
       python = { "isort", "black" },
-      javascript = { "prettierd", "prettier", stop_after_first = true },
+      json = { "prettierd", "prettier", stop_after_first = true },
+      jsonc = { "prettierd", "prettier", stop_after_first = true },
+      yaml = { "prettierd", "prettier", stop_after_first = true },
+      markdown = { "prettierd", "prettier", stop_after_first = true },
+      zsh = { "shfmt" },
+      toml = { "taplo" },
+      go = { "goimports", "gofmt" },
     },
     -- Set default options
     default_format_opts = {
       lsp_format = "fallback",
     },
-    -- Set up format-on-save
-    format_on_save = { timeout_ms = 500 },
     -- Customize formatters
     formatters = {
       shfmt = {

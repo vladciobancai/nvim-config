@@ -16,7 +16,7 @@ return {
       vim.api.nvim_create_autocmd("User", {
         pattern = "VeryLazy",
         callback = function()
-          Snacks.dim.enable()
+          Snacks.dim.disable()
         end,
       })
     end,
